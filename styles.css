@@ -72,7 +72,7 @@ body {
 
 h1 {
     font-family: 'Dancing Script', cursive;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-bottom: 30px;
     color: #ffffff;
     text-shadow: 0 0 10px rgba(255, 105, 180, 0.7);
@@ -80,7 +80,7 @@ h1 {
 
 h2 {
     font-family: 'Parisienne', cursive;
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin-bottom: 20px;
     color: #ffffff;
     text-shadow: 0 0 10px rgba(255, 105, 180, 0.7);
@@ -118,11 +118,10 @@ p {
     box-shadow: 0 8px 20px rgba(255, 105, 180, 0.6);
 }
 
-/* Estilo corrigido para contêineres de foto */
 .photo-container {
     width: 100%;
     max-width: 360px;
-    aspect-ratio: 1/1; /* Mantém proporção quadrada (1:1) */
+    height: 360px; 
     border-radius: 15px;
     overflow: hidden;
     margin: 20px 0;
@@ -133,15 +132,15 @@ p {
 .photo-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Garante que a imagem preencha o contêiner sem distorção */
-    object-position: center; /* Centraliza a imagem no contêiner */
+    object-fit: cover; 
+    object-position: center; 
 }
 
-/* Estilo específico para contêineres no page4 */
+/* Estilo básico para contêineres de fotos no page4 */
 #page4 .photo-container {
     width: 100%;
     max-width: 450px;
-    aspect-ratio: 3/2; /* Proporção paisagem (3:2) */
+    height: 300px;
     border-radius: 15px;
     overflow: hidden;
     margin: 20px 0;
@@ -155,16 +154,60 @@ p {
     object-position: center;
 }
 
+/* Classes de tamanho para ajuste fácil */
+#page4 .photo-xs {
+    max-width: 250px;
+    height: 160px;
+}
+
+#page4 .photo-sm {
+    max-width: 350px;
+    height: 230px;
+}
+
+#page4 .photo-md {
+    max-width: 450px;
+    height: 300px;
+}
+
+#page4 .photo-lg {
+    max-width: 550px;
+    height: 360px;
+}
+
+#page4 .photo-xl {
+    max-width: 650px;
+    height: 420px;
+}
+
+/* Classes para proporções de imagem */
+#page4 .photo-square {
+    aspect-ratio: 1/1;
+    height: auto;
+}
+
+#page4 .photo-portrait {
+    aspect-ratio: 2/3;
+    height: auto;
+}
+
+#page4 .photo-landscape {
+    aspect-ratio: 3/2;
+    height: auto;
+}
+
 /* Ajustes responsivos para diferentes tamanhos de tela */
 @media (max-width: 480px) {
-    .photo-container {
-        max-width: 280px;
-        aspect-ratio: 1/1; /* Mantém proporção quadrada em mobile */
-    }
-    
     #page4 .photo-container {
-        max-width: 280px;
-        aspect-ratio: 3/2; /* Mantém proporção paisagem em mobile */
+        max-width: 380px;
+        height: 250px;
+    }
+}
+
+@media (min-width: 768px) {
+    #page4 .photo-container {
+        max-width: 250px; /* Ajustes responsivos larguras */
+        height: 400px; /* Ajustes responsivos altura */
     }
 }
 

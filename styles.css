@@ -139,8 +139,8 @@ p {
 /* Estilo básico para contêineres de fotos no page4 */
 #page4 .photo-container {
     width: 100%;
-    max-width: 260px;
-    height: 370px;
+    max-width: 280px;
+    height: 390px;
     border-radius: 15px;
     overflow: hidden;
     margin: 20px 0;
@@ -156,28 +156,28 @@ p {
 
 /* Classes de tamanho para ajuste fácil */
 #page4 .photo-xs {
-    max-width: 260px;
-    height: 370px;
+    max-width: 280px;
+    height: 390px;
 }
 
 #page4 .photo-sm {
-    max-width: 260px;
-    height: 370px;
+    max-width: 280px;
+    height: 390px;
 }
 
 #page4 .photo-md {
-    max-width: 270px;
-    height: 360px;
+    max-width: 280px;
+    height: 390px;
 }
 
 #page4 .photo-lg {
-    max-width: 270px;
-    height: 360px;
+    max-width: 280px;
+    height: 390px;
 }
 
 #page4 .photo-xl {
-    max-width: 270px;
-    height: 360px;
+    max-width: 280px;
+    height: 390px;
 }
 
 /* Classes para proporções de imagem */

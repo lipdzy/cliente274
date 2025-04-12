@@ -93,7 +93,9 @@ p {
     margin-bottom: 20px;
     max-width: 600px;
     line-height: 1.6;
-    text-shadow: 0 0 10px rgb(255, 255, 255);
+    text-shadow: 0 0 8px rgb(255, 255, 255);
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .btn {
